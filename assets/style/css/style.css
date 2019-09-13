@@ -1,0 +1,598 @@
+/***************************** FONTS *****************************/
+@font-face {
+  font-family: 'muse-500';
+  src: url('../fonts/museosans-500.otf');
+}
+
+@font-face {
+  font-family: 'muse-300';
+  src: url('../fonts/museosansrounded-300-webfont.ttf'), url('../fonts/museosansrounded-300-webfont.woff'), url('../fonts/museosansrounded-300-webfont.svg');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('../fonts/OpenSans-SemiBold.ttf');
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/***************************** CUSTOM SETTINGS *****************************/
+html {
+  background-color: #ffffff;
+
+}
+
+body {
+  background-color: white;
+  color: #2a2b2b;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 0.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+sup {
+  font-size: xx-small;
+  vertical-align: super;
+}
+
+.plans {
+  margin-bottom: 20px;
+  border: 2px solid #dbdbdb;
+  /* margin: 2px; */
+}
+
+.logo {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.plans:hover {
+  background: #a8a5a5;
+  color: white;
+}
+
+p a,
+h5 a {
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "muse-300", Georgia, serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-family: "muse-300", Georgia, serif;
+}
+
+h3 {
+  font-size: 21px;
+  font-family: "muse-300", Georgia, serif;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: "muse-300", Georgia, serif;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-custom {
+  color: #ffffff;
+  background-color: #72dbc9;
+  font-size: 18px;
+  font-family: "muse-500", Arial, sans-serif;
+  transition: 0.3s all ease-out;
+}
+
+.btn-custom:hover {
+  box-shadow: 1px 3px 12px 0px #b3b3b3;
+  color: #2a2b2b;
+  background: white;
+}
+
+.card {
+  border-color: white;
+}
+
+.card:hover {
+  border-color: #ffebf9;
+  background: #ffebf9;
+  transition: 0.7s all ease-out;
+}
+
+/*************************** NAVBAR **********************/
+#navbar {
+  padding: 15px 25px;
+  border: none;
+  background: #ffffff;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+
+#navbar .navbar-toggler {
+  background: #72dbc9;
+  border: none;
+}
+
+#navbar .navbar-nav .nav-item .nav-link {
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "muse-500", Arial, sans-serif;
+  transition: all 0.3s ease-out;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#navbar .navbar-nav .nav-item .nav-link.active,
+#navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #72dbc9 !important;
+  transition: all 0.5s ease-out;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+}
+
+.center-nav-links {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/**************************** HEADER ***************************/
+#header {
+  overflow-x: hidden;
+}
+
+.skill:hover {
+  background: #72dbc9;
+}
+
+.skill img {
+  margin-top: 10px;
+}
+
+#header #header-container {
+  padding: 50px;
+  background: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/healthy-meals-half-hour-1518191490.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 530px;
+}
+
+.header-img-title {
+  font-family: 'Oleo Script', cursive;
+  font-size: 80px;
+  color: #2a2b2b;
+
+}
+
+#header #header-container .text-container {
+  margin-top: 150px;
+}
+
+#header #header-container .text-container h1,
+#header #header-container .text-container h4 {
+  color: #2b4661;
+  line-height: 1.5em;
+}
+
+#header #header-container .text-container h1 {
+  font-family: "muse-300", Georgia, serif;
+}
+
+#header #header-container .text-container h4 {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+
+#header #footer-container {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#header #footer-container button {
+  color: #ffffff;
+  background-color: #2b4661;
+  font-size: 20px;
+  font-family: "muse-500", Arial, sans-serif;
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+#header #footer-container .event-details {
+  font-family: "muse-500", Arial, sans-serif;
+  font-size: 18px;
+  color: #565659;
+}
+
+#header #footer-container .event-details a {
+  font-family: "OpenSans-Semibold", Arial, sans-serif;
+  font-size: 16px;
+}
+
+#header #footer-container p {
+  color: #5a6175;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+
+.about-me h4 {
+  font-family: "muse-500", Arial, sans-serif;
+  color: #61c0bd;
+  font-weight: bold;
+}
+
+.about-me {
+  font-family: "muse-500", Arial, sans-serif;
+  color: black;
+}
+
+/********************************* EVENT/ABOUT ***********************************/
+#event {
+  padding: 50px 0;
+  font-family: "muse-500", Arial, sans-serif;
+}
+
+#event .container .row .col-md-4 .card a img {
+  opacity: 0.7;
+  height: 200px;
+}
+
+#event .container .row .col-md-4 .card a img:hover {
+  opacity: 1;
+  transition: all 0.7s ease-out;
+}
+
+#event .container .row .col-md-4 .card .card-text {
+  line-height: 1.3;
+}
+
+#event .main-page-title {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+#event .main-page-subtitle {
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+#event h4 {
+  font-size: 18px;
+  margin: 30px;
+}
+
+#event .subtitle {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.card-body h3 {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+
+.card-body p {
+  margin-bottom: 20px;
+}
+
+.social i {
+  font-size: 55px;
+  color: #72dbc9;
+  margin: 8px;
+}
+
+/**************************** CONTACT ***************************/
+#contact {
+  padding: 50px 0;
+}
+
+#contact label {
+  margin-bottom: 10px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+
+#contact .main-page-title {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+/**************************** FOOTER ***************************/
+footer {
+  padding: 20px;
+  background: #72dbc9;
+  color: #2a2b2b;
+}
+
+footer .container-fluid .copyright-area p {
+  color: #2a2b2b;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+footer .container-fluid .copyright-area p a {
+  color: #2a2b2b;
+  text-decoration: none;
+}
+
+/**************************** MEDIA-QUERY ***************************/
+@media only screen and (min-width: 300px) {
+  #navbar {
+    box-shadow: 0px 1px 3px #5a6175;
+  }
+
+  #navbar.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ffffff;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #header #header-container {
+    padding: 50px;
+    /* background: url('https://scontent.fatl1-2.fna.fbcdn.net/v/t1.0-9/68825287_10156737525079624_6109685953171816448_n.jpg?_nc_cat=106&_nc_oc=AQmpih3vN-HpBUYzQxAloksMHzo5FD7qj-dOARxM5MxWBtz5XFZlYPM5HAeLAnFlzPE&_nc_ht=scontent.fatl1-2.fna&oh=ebf06541ade10af267c2fb2e1236fe41&oe=5DD845A2'); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+  }
+
+  #contact .main-page-title {
+    margin-top: 36px;
+  }
+
+  .menu-img {
+    width: 350px;
+    height: 490px;
+  }
+
+  .logo {
+    width: 80px !important;
+    height: 80px !important;
+    margin-top: -70px;
+    margin-left: 100px !important;
+  }
+
+  .logos {
+    width: 150px !important;
+    height: 150px !important;
+    margin-top: 50px;
+    margin-left: 114px !important;
+  }
+
+  .faqs {
+    width: 50px;
+  }
+
+  .contacts {
+    margin-top: 60px;
+  }
+
+  .orders {
+    margin-top: 60px;
+  }
+
+  .plans {
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+  }
+
+  .ordering {
+    width: 240px;
+    height: 274px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .order-picture {
+    width: 239px;
+    height: 200px;
+  }
+
+  .center {
+    width: 270px;
+    height: 150px;
+    margin-left: 24px;
+  }
+
+  .header-img-title {
+    font-size: 53px;
+    margin-top: -30px;
+  }
+
+  .about-jean-img {
+    width: 300px;
+    height: 320px;
+  }
+
+  .main-btn {
+    font-size: 13px;
+  }
+
+  #header #footer-container p {
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+
+  #event .container .row .col-md-4 .card {
+    margin-bottom: 35px;
+  }
+
+  #event {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .about-jean-img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .order-picture {
+    width: 209px;
+    height: 200px;
+  }
+
+  .about-hers {
+    width: 289px;
+    height: 190px;
+  }
+}
